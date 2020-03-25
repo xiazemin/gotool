@@ -11,5 +11,6 @@
   * [go tool pprof](pprof/go-tool-pprof.md)
   * [生成图片](pprof/sheng-cheng-tu-pian.md)
 * [http pprof](http-pprof.md)
+  * [wrk](http-pprof/wrk.md)
 * [FlameGraph](flamegraph.md)
 
