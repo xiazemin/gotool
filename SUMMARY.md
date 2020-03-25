@@ -10,4 +10,5 @@
 * [pprof](pprof.md)
   * [go tool pprof](pprof/go-tool-pprof.md)
   * [生成图片](pprof/sheng-cheng-tu-pian.md)
+* [http pprof](http-pprof.md)
 
