@@ -55,6 +55,16 @@ Showing nodes accounting for 1.50MB, 100% of 1.50MB total
 
 $go tool pprof --svg m heap > heap.svg
 
+$curl 127.0.0.1:9876/debug/pprof/trace?seconds=10 > trace.data
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1994  100  1994    0     0    199      0  0:00:10  0:00:10 --:--:--   525
+
+$go tool trace -http=':8888' m trace.data
+2020/03/25 17:52:56 Parsing trace...
+2020/03/25 17:52:56 Splitting trace...
+2020/03/25 17:52:56 Opening browser. Trace viewer is listening on http://[::]:8888
+
 
 
 
