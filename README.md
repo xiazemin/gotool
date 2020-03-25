@@ -9,5 +9,23 @@
 
 ## 两种收集方式 {#两种收集方式}
 
-做 Profiling 第一步就是怎么获取应用程序的运行情况数据。go 语言提供了 `runtime/pprof` 和 `net/http/pprof` 两个库，这部分我们讲讲它们的用法以及使用场景。
+做 Profiling 第一步就是怎么获取应用程序的运行情况数据。go 语言提供了 `runtime/pprof` 和 `net/http/pprof` 两个库，这部分我们讲讲它们的用法以及使用场景。
+
+`go tool pprof`
+
+ 最简单的使用方式为 
+
+`go tool pprof [binary] [source]`
+
+，
+
+`binary`
+
+ 是应用的二进制文件，用来解析各种符号；
+
+`source`
+
+ 表示 profile 数据的来源，可以是本地的文件，也可以是 http 地址。
+
+
 
