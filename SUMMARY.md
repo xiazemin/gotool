@@ -13,4 +13,5 @@
 * [http pprof](http-pprof.md)
   * [wrk](http-pprof/wrk.md)
 * [FlameGraph](flamegraph.md)
+* [httptrace](httptrace.md)
 
