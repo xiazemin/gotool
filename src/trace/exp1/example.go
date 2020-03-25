@@ -2,8 +2,8 @@ package main
 import (
 "os"
 "runtime/trace"
-	"fmt"
-	"sync"
+	//"fmt"
+	//"sync"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 	}
 	defer trace.Stop()
 	// Your program here
-	var wg sync.WaitGroup
+	/*var wg sync.WaitGroup
 	wg.Add(100)
 	for i:=0;i<100;i++{
 		go func(i int) {
@@ -29,4 +29,11 @@ func main() {
 	}
 	fmt.Println("hello")
 	wg.Wait()
+*/
+	ch := make(chan string)
+	go func() {
+		ch <- "EDDYCJY"
+	}()
+
+	<-ch
 }
