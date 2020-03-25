@@ -6,4 +6,5 @@
   * [参考](go-tool-trace/can-kao.md)
   * [接口](go-tool-trace/jie-kou.md)
   * 于pprof结合
+  * [问题解法](go-tool-trace/wen-ti-jie-fa.md)
 
