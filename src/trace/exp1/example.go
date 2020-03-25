@@ -2,6 +2,8 @@ package main
 import (
 "os"
 "runtime/trace"
+	"fmt"
+	"sync"
 )
 
 func main() {
@@ -17,4 +19,14 @@ func main() {
 	}
 	defer trace.Stop()
 	// Your program here
+	var wg sync.WaitGroup
+	wg.Add(100)
+	for i:=0;i<100;i++{
+		go func(i int) {
+			fmt.Println(i)
+			wg.Done()
+		}(i)
+	}
+	fmt.Println("hello")
+	wg.Wait()
 }
