@@ -9,4 +9,5 @@
   * [问题解法](go-tool-trace/wen-ti-jie-fa.md)
 * [pprof](pprof.md)
   * [go tool pprof](pprof/go-tool-pprof.md)
+  * [生成图片](pprof/sheng-cheng-tu-pian.md)
 
