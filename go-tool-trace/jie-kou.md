@@ -8,3 +8,27 @@ displays a lot of information, so it is hard to know where to start. Let’s get
 
 
 
+View trace：查看跟踪
+
+Goroutine analysis：Goroutine 分析
+
+Network blocking profile：网络阻塞概况
+
+Synchronization blocking profile：同步阻塞概况
+
+Syscall blocking profile：系统调用阻塞概况
+
+Scheduler latency profile：调度延迟概况
+
+User defined tasks：用户自定义任务
+
+User defined regions：用户自定义区域
+
+Minimum mutator utilization：最低 Mutator 利用率
+
+Scheduler latency profile
+
+在刚开始查看问题时，除非是很明显的现象，否则不应该一开始就陷入细节，因此我们一般先查看 “Scheduler latency profile”，我们能通过 Graph 看到整体的调用开销情况，如下：
+
+
+
