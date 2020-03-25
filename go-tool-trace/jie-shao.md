@@ -20,6 +20,8 @@ UI是一个Web应用程序。
 
 * proc＃2什么时候停止？
 
+ 这涉及从标准库导入runtime/trace
+
 ```
 package main
 import (
@@ -28,18 +30,18 @@ import (
 )
 
 func main() {
-	f, err := os.Create("trace.out")
-	if err != nil {
-		panic(err)
-	}
-	defer f.Close()
+    f, err := os.Create("trace.out")
+    if err != nil {
+        panic(err)
+    }
+    defer f.Close()
 
-	err = trace.Start(f)
-	if err != nil {
-		panic(err)
-	}
-	defer trace.Stop()
-	// Your program here
+    err = trace.Start(f)
+    if err != nil {
+        panic(err)
+    }
+    defer trace.Stop()
+    // Your program here
 }
 ```
 
